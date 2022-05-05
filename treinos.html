@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinos | AppMeuTreino</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">AppMeuTreino</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav fonte">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">Treinos</a>
+                <a class="nav-link" href="#">Meus dados</a>
+              </div>
+            </div>
+          </div>
+      </nav>
+  </header>
+  <main>
+    <h2 class="m-3">Meus treinos</h2>
+    <div class="container bloco-cards-treinos">
+      <div class="row justify-content-center">
+        <div class="card cartao-treino cor-A col-12 col-lg-3 mb-3">
+          <div class="card-body cartao-treino__espacamento">
+            <h6 class="card-subtitle mb-2 text-muted">Treino A</h6>
+            <h5 class="card-title">Peito, tríceps e ombro</h5>
+            <p class="card-text">10x cada exercício e repete a linha 3x</p>
+            <ul class="cartao-treino_lista">
+              <li href="#" class="cartao-linha" data-bs-toggle="modal" data-bs-target="#modal-A1">Supino  |  Testa  |  Desenvolvimento</li>
+              <li href="#" class="cartao-linha" data-bs-toggle="modal" data-bs-target="#modal-A2">Crucifixo  |  Banco  |  Elevação Frontal</li>
+              <li href="#" class="cartao-linha" data-bs-toggle="modal" data-bs-target="#modal-A3">Supino inclinado  |  Francês  |  Elevação Lateral</li>
+              <li href="#" class="cartao-linha" data-bs-toggle="modal" data-bs-target="#modal-A4">Standing Chest Press  |  Coice  |  Arnold</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="card cartao-treino cor-B col-12 col-lg-3 mb-3">
+          <div class="card-body cartao-treino__espacamento">
+            <h6 class="card-subtitle mb-2 text-muted">Treino B</h6>
+            <h5 class="card-title">Costas, Bíceps e ABS</h5>
+            <p class="card-text">10x cada exercício e repete a linha 3x</p>
+            <ul class="cartao-treino_lista">
+              <li href="#" class="cartao-linha" data-bs-toggle="modal" data-bs-target="#modal-B1">Pullover  |  Rosca Direta  |  Reto Chão</li>
+              <li href="#" class="cartao-linha" data-bs-toggle="modal" data-bs-target="#modal-B2">Remada  |  Rosca Martelo  |  Russo</li>
+              <li href="#" class="cartao-linha" data-bs-toggle="modal" data-bs-target="#modal-B3">Dumbbell Rows  |  Alternada  |  ABS infra</li>
+              <li href="#" class="cartao-linha" data-bs-toggle="modal" data-bs-target="#modal-B4">Flexão  |  Rosca Concentrada  |  Prancha</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card cartao-treino cor-C col-12 col-lg-3 mb-3">
+          <div class="card-body cartao-treino__espacamento">
+            <h6 class="card-subtitle mb-2 text-muted">Treino C</h6>
+            <h5 class="card-title">Pernas</h5>
+            <p class="card-text">10x cada exercício e repete a coluna 3x</p>
+            <ul class="cartao-treino_lista">
+              <li href="#" class="cartao-linha" data-bs-toggle="modal" data-bs-target="#modal-C1">Agachamento Back</li>
+              <li href="#" class="cartao-linha" data-bs-toggle="modal" data-bs-target="#modal-C1">Sumô</li>
+              <li href="#" class="cartao-linha" data-bs-toggle="modal" data-bs-target="#modal-C1">Terra</li>
+              <li href="#" class="cartao-linha" data-bs-toggle="modal" data-bs-target="#modal-C1">Afundo</li>
+              <li href="#" class="cartao-linha" data-bs-toggle="modal" data-bs-target="#modal-C1">Agachamento Frontal</li>
+              <li href="#" class="cartao-linha" data-bs-toggle="modal" data-bs-target="#modal-C1">Stiff</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+    
+  
+  <footer class="rodape">
+    <p>&copy;appMeuTreino | Caroline Almeida</p>
+  </footer>
+
+
+  
+  <!-- Modal treino A1 -->
+  <div class="modal fade" id="modal-A1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+          <header class="modal-header cor-A">
+              <h5 class="modal-title" id="exampleModalLabel">Treino A - Primeira série</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </header>
+          <main class="modal-body justify-content-center">
+            <article class="card m-3">
+              <div class="card-body modal-treino-area">
+                <h5 class="card-title">Supino</h5>
+              </div>
+              <img src="https://treinomestre.com.br/wp-content/uploads/2017/08/supino-fechado-cp-768x413.jpg" class="card-img-top" alt="...">
+            </article>
+            <article class="card m-3">
+              <div class="card-body modal-treino-area">
+                <h5 class="card-title">Testa</h5>
+              </div>
+              <img src="https://grandeatleta.com.br/wp-content/uploads/2018/11/triceps-testa-musculos.jpg" class="card-img-top" alt="...">
+            </article>
+            <article class="card m-3">
+              <div class="card-body modal-treino-area">
+                <h5 class="card-title">Desenvolvimento</h5>
+              </div>
+              <img src="https://treinomestre.com.br/wp-content/uploads/2018/09/desenvolvimento-com-halteres.jpg" class="card-img-top" alt="...">
+            </article>
+          </main>
+
+          <footer class="modal-footer cor-A">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Anterior</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-A2">Próximo</button>
+          </footer>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal treino A2 -->
+  <div class="modal fade" id="modal-A2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <header class="modal-header cor-A">
+          <h5 class="modal-title" id="exampleModalLabel">Treino A - Segunda série</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </header>
+        <main class="modal-body justify-content-center">
+            <article class="card m-3">
+                <div class="card-body modal-treino-area">
+                  <h5 class="card-title">Crucifixo</h5>
+                </div>
+                <img src="https://i.pinimg.com/originals/1c/46/60/1c4660a5b6f97423b3471b9355bbb16c.jpg" class="card-img-top" alt="...">
+            </article>
+            <article class="card m-3">
+              <div class="card-body">
+                <h5 class="card-title">Banco</h5>
+              </div>
+              <img src="https://i0.wp.com/meutreinoperfeito.com.br/wp-content/uploads/2021/03/Triceps-no-Banco-Musculos-Trabalhados.jpg?resize=800%2C800&ssl=1" class="card-img-top" alt="...">
+            </article>
+            <article class="card m-3">
+              <div class="card-body">
+                <h5 class="card-title">Elevação Frontal</h5>
+              </div>
+              <img src="https://grandeatleta.com.br/wp-content/uploads/2020/02/elevacao-frontal-650x394.jpg" class="card-img-top" alt="...">
+            </article>
+        </main>
+        
+        <footer class="modal-footer cor-A">
+          <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal-A1">Anterior</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-A3">Próximo</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal treino A3 -->
+  <div class="modal fade" id="modal-A3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <header class="modal-header cor-A">
+          <h5 class="modal-title" id="exampleModalLabel">Treino A - Terceira série</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </header>
+        <main class="modal-body justify-content-center">
+            <article class="card m-3">
+              <div class="card-body modal-treino-area">
+                <h5 class="card-title">Supino inclinado</h5>
+              </div>
+              <img src="https://treinomestre.com.br/wp-content/uploads/2016/10/supino-inclinado-com-barra.jpg" class="card-img-top" alt="...">
+            </article>
+            <article class="card m-3">
+              <div class="card-body modal-treino-area">
+                <h5 class="card-title">Francês</h5>
+                </div>
+                <img src="https://treinomestre.com.br/wp-content/uploads/2017/05/triceps-frances-com-barra.jpg" class="card-img-top" alt="...">
+            </article>
+            <article class="card m-3">
+              <div class="card-body modal-treino-area">
+                <h5 class="card-title">Elevação Lateral</h5>
+              </div>
+              <img src="https://marcelogomespersonal.com/wp-content/uploads/2020/08/elevacao-lateral-com-halter.jpg" class="card-img-top" alt="...">
+            </article>
+        </main>
+        <footer class="modal-footer cor-A">
+          <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal-A2">Anterior</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-A4">Próximo</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal treino A4 -->
+  <div class="modal fade" id="modal-A4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <header class="modal-header cor-A">
+          <h5 class="modal-title" id="exampleModalLabel">Treino A - Quarta série</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </header>
+        <main class="modal-body justify-content-center">
+            <article class="card m-3">
+                <div class="card-body modal-treino-area">
+                  <h5 class="card-title">Standing Chest Press</h5>
+                </div>
+                <img src="https://fitbodyhome.b-cdn.net/wp-content/uploads/2020/04/Svend-press-.jpg" class="card-img-top" alt="...">
+            </article>
+            <article class="card m-3">
+                <div class="card-body modal-treino-area">
+                  <h5 class="card-title">Coice</h5>
+                </div>
+                <img src="https://treinomestre.com.br/wp-content/uploads/2018/09/triceps-coice.jpg" class="card-img-top" alt="...">
+            </article>
+            <article class="card m-3">  
+                <div class="card-body modal-treino-area">
+                  <h5 class="card-title">Arnold</h5>
+                </div>
+                <img src="https://treinomestre.com.br/wp-content/uploads/2018/10/desenvolvimento-arnold-.jpg" class="card-img-top" alt="...">
+            </article>
+        </main>
+        <footer class="modal-footer cor-A">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modal-A3">Anterior</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-B1">Próximo</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal treino B1 -->
+  <div class="modal fade" id="modal-B1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <header class="modal-header cor-B">
+          <h5 class="modal-title" id="exampleModalLabel">Treino B - Primeira série</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </header>
+        <main class="modal-body justify-content-center">
+          <article class="card m-3">
+            <div class="card-body modal-treino-area">
+              <h5 class="card-title">Pullover</h5>
+            </div>
+            <img src="https://treinomestre.com.br/wp-content/uploads/2018/11/pullover.jpg" class="card-img-top" alt="...">
+          </article>
+          <article class="card m-3">
+            <div class="card-body modal-treino-area">
+              <h5 class="card-title">Rosca Direta</h5>
+            </div>
+            <img src="https://grandeatleta.com.br/wp-content/uploads/2018/07/rosca-direta-barra-reta-ou-w.jpg" class="card-img-top" alt="...">
+          </article>
+          <article class="card m-3">
+            <div class="card-body modal-treino-area">
+              <h5 class="card-title">Reto Chão</h5>
+            </div>
+            <img src="https://www.basefitness.com.br/wp-content/uploads/2019/01/m%C3%BAsculos-envolvidos-abdominal-tradicional.jpg" class="card-img-top" alt="...">
+          </article>
+        </main>
+        <footer class="modal-footer cor-B">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modal-A4">Anterior</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-B2">Próximo</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal treino B2 -->
+  <div class="modal fade" id="modal-B2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <header class="modal-header cor-B">
+          <h5 class="modal-title" id="exampleModalLabel">Treino B - Segunda série</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </header>
+        <main class="modal-body justify-content-center">
+          <article class="card m-3">
+            <div class="card-body modal-treino-area">
+              <h5 class="card-title">Remada</h5>
+            </div>
+            <img src="https://treinomestre.com.br/wp-content/uploads/2015/03/remada-curvada-capa.jpg" class="card-img-top" alt="...">
+          </article>
+          <article class="card m-3">
+            <div class="card-body modal-treino-area">
+              <h5 class="card-title">Rosca Martelo</h5>
+            </div>
+            <img src="https://i.pinimg.com/originals/bf/b1/dc/bfb1dca85fa1869efe0e6976355e64a1.jpg" class="card-img-top" alt="...">
+          </article>
+          <article class="card m-3">
+            <div class="card-body modal-treino-area">
+              <h5 class="card-title">Russo</h5>
+            </div>
+            <img src="https://i.pinimg.com/originals/d3/58/8a/d3588adedda43e99ae7b4dbeab94fa7c.jpg" class="card-img-top" alt="...">
+          </article>
+        </main>
+        <footer class="modal-footer cor-B">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modal-B1">Anterior</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-B3">Próximo</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal treino B3 -->
+  <div class="modal fade" id="modal-B3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <header class="modal-header cor-B">
+          <h5 class="modal-title" id="exampleModalLabel">Treino B - Terceira série</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </header>
+        <main class="modal-body justify-content-center">
+          <article class="card m-3">
+            <div class="card-body modal-treino-area">
+              <h5 class="card-title">Dumbbell Rows</h5>
+            </div>
+            <img src="https://cdn-0.weighttraining.guide/wp-content/uploads/2016/10/bent-over-one-arm-dumbbell-row-resized.png?ezimgfmt=ng%3Awebp%2Fngcb1" class="card-img-top" alt="...">
+          </article>
+          <article class="card m-3">
+            <div class="card-body modal-treino-area">
+              <h5 class="card-title">Alternada</h5>
+            </div>
+            <img src="https://grandeatleta.com.br/wp-content/uploads/2020/10/rosca-alternada-com-halteres.jpg" class="card-img-top" alt="...">
+          </article>
+          <article class="card m-3">
+            <div class="card-body modal-treino-area">
+              <h5 class="card-title">ABS infra</h5>
+            </div>
+            <img src="https://fanaticospormusculacao.com/wp-content/uploads/2021/03/Abdominal-infra-solo.jpg" class="card-img-top" alt="...">
+          </article>
+        </main>
+        <footer class="modal-footer cor-B">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modal-B2">Anterior</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-B4">Próximo</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal treino B4 -->
+  <div class="modal fade" id="modal-B4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <header class="modal-header cor-B">
+          <h5 class="modal-title" id="exampleModalLabel">Treino B - Quarta série</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </header>
+        <main class="modal-body justify-content-center">
+          <article class="card m-3">
+            <div class="card-body modal-treino-area">
+              <h5 class="card-title">Flexão</h5>
+            </div>
+            <img src="https://treinomestre.com.br/wp-content/uploads/2017/08/flexao-de-bra%C3%A7o-push-up-varia%C3%A7%C3%B5es.jpg" class="card-img-top" alt="...">
+          </article>
+          <article class="card m-3">
+            <div class="card-body modal-treino-area">
+              <h5 class="card-title">Rosca Concentrada</h5>
+            </div>
+            <img src="https://treinomestre.com.br/wp-content/uploads/2018/09/rosca-concentrada-erros-.jpg" class="card-img-top" alt="...">
+          </article>
+          <article class="card m-3">
+            <div class="card-body modal-treino-area">
+              <h5 class="card-title">Prancha</h5>
+            </div>
+            <img src="https://www.cabeconegro.com.br/polopoly_fs/1.1827604.1448107747!/imagens/14469004009020.jpg" class="card-img-top" alt="...">
+          </article>
+        </main>
+        <footer class="modal-footer cor-B">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modal-B3">Anterior</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-C1">Próximo</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal treino C -->
+  <div class="modal fade" id="modal-C1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <header class="modal-header cor-C">
+          <h5 class="modal-title" id="exampleModalLabel">Treino C</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </header>
+        <main class="modal-body justify-content-center">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item carousel__conteudo active">
+                <p>1. Agachamento Back</p>
+                <img src="https://scontent.ffco3-1.fna.fbcdn.net/v/t1.18169-9/21686439_951564354998689_4635367409922134009_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=IQscbFXPyrQAX-lBQ8-&_nc_ht=scontent.ffco3-1.fna&oh=00_AT_bAvGekZRiWi3K2WJl74KTnK-9YOSowDL2-6PsV5c8aw&oe=6298DA77" class="  carousel__imagem" alt="...">
+              </div>
+              <div class="carousel-item carousel__conteudo">
+                <p>2. Sumô</p>
+                <img src="https://img.elo7.com.br/product/zoom/3616A80/agachamento-sumo-agachamento.jpg" class="  carousel__imagem" alt="...">
+              </div>
+              <div class="carousel-item carousel__conteudo">
+                <p>3. Agachamento Terra</p>
+                <img src="https://i.pinimg.com/originals/fc/9e/06/fc9e0650a9ac2c850e9bca9392ceafbd.jpg" class="  carousel__imagem" alt="...">
+              </div>
+              <div class="carousel-item carousel__conteudo">
+                <p>4. Afundo</p>
+                <img src="https://treinomestre.com.br/wp-content/uploads/2018/06/exercicio-afundo-.png" class="  carousel__imagem" alt="...">
+              </div>
+              <div class="carousel-item carousel__conteudo">
+                <p>5. Agachamento Frontal</p>
+                <img src="https://www.treinomestre.com.br/wp-content/uploads/2017/03/agachamento-frontal-cp.jpg" class="  carousel__imagem" alt="...">
+              </div>
+              <div class="carousel-item carousel__conteudo">
+                <p>6. Stiff</p>
+                <img src="https://treinomestre.com.br/wp-content/uploads/2016/11/stiff-musculos-trabalhados-.jpg" class="  carousel__imagem" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </main>
+        <footer class="modal-footer cor-C">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modal-B4">Anterior</button>
+          <button type="button" class="btn btn-primary" data-bs-target="#carouselExampleControls" data-bs-slide="next">Próximo</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
